@@ -1,0 +1,71 @@
+.cta-banner {
+    position: relative;
+    z-index: inherit;
+    overflow: hidden;
+    @include media("<767px") {
+        background-image: url("../assets/cta-bg.jpg");
+        background-color: $orange;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    .container {
+        max-width:100%;
+    }
+    .row {
+        min-height: 100vh;
+        @include media("<767px") {
+            min-height: auto;
+            padding: 2rem;
+        }
+        @include media("<500px") {
+            padding:1rem;
+        }
+        @include media("<400px") {
+            padding:0.5rem;
+        }
+    }
+    &__col {
+        margin:auto ;
+        background-color: $white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 1rem;
+        @include media("<767px") {
+            background-color: transparent;
+        }
+    }
+    &__image-col {
+        background-image: url("../assets/cta-bg.jpg");
+        background-color: $orange;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        @include media("<767px") {
+            display: none;
+        }
+    }
+    &__content {
+        background-color: $white;
+        padding:2.2rem;
+        min-height: 370px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @include media("<576px") {
+            padding:1.8rem;
+            min-height: 300px;
+        }
+        
+        h2 {
+            margin-bottom: 2rem;
+            @include media("<576px") {
+                font-size: 2rem;
+                line-height: 2.2rem;
+            }
+        }
+    }
+}

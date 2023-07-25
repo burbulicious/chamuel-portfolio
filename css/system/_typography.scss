@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap');
+
+html,
+.root {
+    font-size: 18px;
+    line-height: 18px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+    @include media("<desktop") {
+        font-size: 16px;
+        line-height: 16px;
+    }
+}
+
+h1,
+h2 {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin: 0 0 1rem 0;
+    color: $darkest-brown;
+    @include media("<desktop") {
+        font-size: 3.6rem;
+        line-height: 4rem; 
+    }
+    @include media("<phone") {
+        font-size: 3rem;
+        line-height: 3.2rem;
+    }
+    span {
+        color: $green;
+    }
+}
+
+h2 {
+    font-size: 3.3rem;
+    line-height: 4.1rem;
+    margin: 0 0 1.4rem 0;
+    color: $darkest-brown;
+    @include media("<desktop") {
+        font-size: 3.1rem;
+        line-height:3.5rem;
+        margin: 0 0 1.2rem 0;
+    }
+    @include media("<991px") {
+        font-size: 2.8rem;
+        line-height:3rem;
+    }
+    @include media("<phone") {
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+    }
+    span {
+        color: $green;
+    }
+}
+
+h3 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+    color: $darkest-brown;
+    @include media("<991px") {
+        font-size: 1.4rem;
+        line-height:1.7rem;
+    }
+}
+
+h4 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin: 0 0 2rem 0;
+    font-weight: 400;
+    text-align: center;
+    color: $dark-brown;
+    @include media("<desktop") {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        margin: 0 0 1.2rem 0;
+    }
+}
+
+h5 {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    margin: 0 0 1rem 0;
+    color: $darkest-brown;
+}
+
+h6 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0 0 1rem 0;
+    font-weight: 700;
+    color: $darkest-brown;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0 0 0.5rem 0;
+    color: $darkest-brown;
+}
+
+a {
+    text-decoration: none;
+    color: $orange;
+    transition: color 0.3s;
+    &:hover {
+        color: $green;
+    }
+}
+
+.qoute {
+    font-style: italic;
+    margin: 0 0 1rem 0;
+    @include media("<desktop") {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+}
+.white {
+    color: $white;
+}
+.orange {
+    color: $orange;
+}
+.left {
+    text-align: left;
+}
+.center {
+    text-align: center;
+}
+.right {
+    text-align: right;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.regular {
+    font-weight: 400;
+}

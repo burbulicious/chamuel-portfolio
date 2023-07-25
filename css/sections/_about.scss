@@ -1,0 +1,54 @@
+.about {
+    background-color: $white;
+    position: relative;
+    overflow: hidden;
+    .container {
+        max-width:100%;
+    }
+    .row {
+        min-height: 100vh;
+    }
+    &__header-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url("../assets/about-us-4-min.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        min-height: 50vh;
+        h2 {
+            max-width: fit-content;
+            background-color: #fff;
+            padding: 3rem 4rem;
+            margin: auto;
+            
+        }
+    }
+ 
+    &__text-col {
+        display: flex;
+        align-items: center;
+        &__inner {
+            padding:2rem 1rem;
+            max-width: 700px;
+            margin: auto;
+            @include media("<400px") {
+                padding:2rem 0;
+            }
+            a {
+                display: flex;
+            }
+            &__logo {
+                max-width: 250px;
+                margin-bottom: 1.2rem;
+                @include media("<768px") {
+                    margin: 0 auto 1.2rem auto;
+                }
+            }
+            p {
+                max-width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,68 @@
+.quotes {
+    background-color: $light-brown;
+    position: relative;
+    .container {
+        max-width:100%;
+    }
+    &__header-col {
+        max-height: 100%;
+        min-height: 100vh;
+        background-color: $white;
+        @include media("<768px") {
+            min-height: auto;
+            background-color: transparent;
+        }
+        &__title {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media("<768px") {
+                height: auto;
+                padding-top: 3rem;
+            }
+            &.fixed {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 50%;
+                @include media("<768px") {
+                    position: relative;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__col {
+        padding: 5.5rem 15px;
+        max-width: 630px;
+        margin: auto;
+        @include media("<991px") {
+            padding:2rem 15px ;
+        }
+    }
+    &__one-item {
+        background-color: $white;
+        padding:2rem;
+        display: flex;
+        justify-content: space-between ;
+        flex-direction: column;
+        transition: all 0.5s ease;
+        max-width: 600px;
+        margin: 0 auto 30px auto;
+        &:hover {
+            transform: scale(1.05);
+        }   
+        
+        .qoute {
+            margin-bottom: 1.5rem;
+        }
+        h5 {
+            margin-bottom: 0;
+            @include media("<380px") {
+                font-size: 1rem;
+                line-height: 1.2rem;
+            }
+        }
+    }
+}
